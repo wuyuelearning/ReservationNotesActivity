@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="产品详情页"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/to_refund_rule_tv"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="退改规则"/>
+        <TextView
+            android:id="@+id/to_trip_warning_tv"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="出行警示"/>
+        <TextView
+            android:id="@+id/to_shopping_instruction_tv"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="购物说明"/>
+        <TextView
+            android:id="@+id/to_recommend_project_tv"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="推荐项目"/>
+
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/to_select_products_tv"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="选择产品页"/>
+
+
+    <include
+        layout="@layout/jiushi"
+        />
+    <TextView
+        android:id="@+id/tosadads_select_products_tv"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="选择产品页"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <include
+            layout="@layout/jiushi"
+            />
+        <include
+            layout="@layout/jiushi"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/cost_include_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/cost_include_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="费用包含" />
+
+                    <TextView
+                        android:id="@+id/cost_detail_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="成人" />
+
+                    <com.example.administrator.reservationnotesactivity.ExpandListView
+                        android:id="@+id/cost_include_listview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@null"
+                        android:listSelector="#00000000"
+                        >
+                    </com.example.administrator.reservationnotesactivity.ExpandListView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cost_not_include_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/cost_not_include_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="费用不包含" />
+
+                    <TextView
+                        android:id="@+id/cost_not_detail_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="成人" />
+
+                    <com.example.administrator.reservationnotesactivity.ExpandListView
+                        android:id="@+id/cost_not_include_listview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:listSelector="#00000000"
+                        android:divider="@null">
+
+                    </com.example.administrator.reservationnotesactivity.ExpandListView>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+    </ScrollView>
+</LinearLayout>
